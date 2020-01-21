@@ -1,0 +1,34 @@
+{
+  "name": "@lundiak/drinks",
+  "version": "1.0.0",
+  "description": "Drinks collection",
+  "main": "index.js",
+  "scripts": {
+    "devBuild": "rm -rf dist && webpack --mode development --env.dev --progress",
+    "prodBuild": "rm -rf dist && webpack --mode production --env.prod",
+    "build": "npm run devBuild",
+    "prodStart": "webpack-dev-server --mode production --env.prod",
+    "start": "webpack-dev-server --mode development --env.dev",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --fix --format node_modules/eslint-friendly-formatter \"./src/**/*.js*\"",
+    "analyze": "set NODE_ENV=production&&set BUNDLE_ANALYZE=true && webpack --progress --mode production --env.prod",
+    "predeploy": "npm run prodBuild",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alundiak/drinks.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alundiak/drinks/issues"
+  },
+  "homepage": "https://github.com/alundiak/drinks#readme",
+  "dependencies": {
+    "gh-pages": "^2.2.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "reactstrap": "^8.4.0"
+  }
+}
