@@ -44,3 +44,9 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+
+## Other Notes
+- https://internetingishard.com/html-and-css/semantic-html/
+- https://create-react-app.dev/docs/making-a-progressive-web-app/#why-opt-in
+- https://prettier.io/docs/en/integrating-with-linters.html
