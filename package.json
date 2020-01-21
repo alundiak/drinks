@@ -4,6 +4,7 @@
   "description": "Drinks collection",
   "private": true,
   "dependencies": {
+    "@sandstreamdev/react-swipeable-list": "^0.3.2",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -15,23 +16,23 @@
   },
   "devDependencies": {
     "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-prettier": "^3.1.2",
     "gh-pages": "^2.2.0",
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "serialize-javascript": "^2.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "prodBuild": "react-scripts build -- --mode production --env.prod",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "prettier": "prettier src/**/*.jsx src/**/*.js src/styles/**/*.css --check",
+    "prettier-watch": "onchange '**/*.js' -- prettier --write {{changed}}",
+    "predeploy": "yarn build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
-    "extends": "react-app",
-    "plugins": ["prettier"],
-    "rules": {
-      "prettier/prettier": "error"
-    }
+    "extends": "plugin:prettier/recommended"
   },
   "browserslist": {
     "production": [

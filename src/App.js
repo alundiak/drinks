@@ -3,6 +3,8 @@ import logo from './images/logo6.jpg';
 import './styles/App.css';
 import './styles/responsive.css';
 import DrinksList from './components/DrinksList';
+import DrinkCard from './components/DrinkCard';
+import SwipeableDrinksList from './components/SwipeableDrinksList';
 
 function App() {
   return (
@@ -11,7 +13,9 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
       </header>
       <article>
+        <SwipeableDrinksList />
         <DrinksList />
+        <DrinkCard />
         {/* <figure>can be modal-like UI component</figure> */}
       </article>
       <footer>
