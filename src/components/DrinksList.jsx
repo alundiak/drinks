@@ -23,97 +23,51 @@ const Example = (props) => {
     <Table>
       <thead>
         <tr>
-          <th>#</th>
-          <th>Alcohol</th> {/* vodka, tequila, gin, etc. or "many" or "none" */}
+          <th>Main alcohol</th> {/* vodka, tequila, gin, etc. or "many" or "none" */}
           <th>Name</th>
           <th>Picture</th>
-          <th>Recipe</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <th scope="row">1</th>
+          <td>Vodka</td>
+          <td>Pornstar Martini</td>
+          <td onClick={toggle}><img src={'https://stevethebartender.com.au/wp-content/uploads/2019/03/pornstar-martini-cocktail-recipe.jpg'} className="drink-image" alt="tbd" /></td>
+        </tr>
+        <tr>
+          <td>Gin</td>
+          <td>Aperol Spritz</td>
+          <td onClick={toggle}><img src={'https://buzz.cat/wp-content/uploads/2019/04/pornstar-martini.jpg'} className="drink-image" alt="tbd" /></td>
+        </tr>
+        <tr>
+          <td>Tequila</td>
+          <td>Margarita</td>
+          <td onClick={toggle}><img src={img2} className="drink-image" alt="tbd" /></td>
+        </tr>
+        <tr>
           <td>Vodka</td>
           <td>Pornstar Martini</td>
           <td onClick={toggle}><img src={img1} className="drink-image" alt="tbd" /></td>
-          <td>tbd</td>
         </tr>
         <tr>
-          <th scope="row">2</th>
           <td>Gin</td>
           <td>Aperol Spritz</td>
           <td><img src={img1} className="drink-image" alt="tbd" /></td>
-          <td>tbd</td>
         </tr>
         <tr>
-          <th scope="row">3</th>
           <td>Tequila</td>
           <td>Margarita</td>
+          <td><img src={img1} className="drink-image" alt="tbd" /></td>
+        </tr>
+        <tr>
+          <td>Vodka</td>
+          <td>Pornstar Martini</td>
+          <td><img src={img1} className="drink-image" alt="tbd" /></td>
+        </tr>
+        <tr>
+          <td>many</td>
+          <td>Terminator</td>
           <td><img src={img2} className="drink-image" alt="tbd" /></td>
-          <td>tbd</td>
-        </tr>
-        <tr>
-          <th scope="row">4</th>
-          <td>Vodka</td>
-          <td>Pornstar Martini</td>
-          <td><img src={img1} className="drink-image" alt="tbd" /></td>
-          <td>tbd</td>
-        </tr>
-        <tr>
-          <th scope="row">5</th>
-          <td>Gin</td>
-          <td>Aperol Spritz</td>
-          <td><img src={img1} className="drink-image" alt="tbd" /></td>
-          <td>tbd</td>
-        </tr>
-        <tr>
-          <th scope="row">6</th>
-          <td>Tequila</td>
-          <td>Margarita</td>
-          <td><img src={img1} className="drink-image" alt="tbd" /></td>
-          <td>tbd</td>
-        </tr>
-        <tr>
-          <th scope="row">7</th>
-          <td>Vodka</td>
-          <td>Pornstar Martini</td>
-          <td><img src={img1} className="drink-image" alt="tbd" /></td>
-          <td>tbd</td>
-        </tr>
-        <tr>
-          <th scope="row">8</th>
-          <td>Gin</td>
-          <td>Aperol Spritz</td>
-          <td>stir</td>
-          <td>tbd</td>
-        </tr>
-        <tr>
-          <th scope="row">9</th>
-          <td>Tequila</td>
-          <td>Margarita</td>
-          <td>shake</td>
-          <td>tbd</td>
-        </tr>
-        <tr>
-          <th scope="row">10</th>
-          <td>Vodka</td>
-          <td>Pornstar Martini</td>
-          <td>shake</td>
-          <td>tbd</td>
-        </tr>
-        <tr>
-          <th scope="row">11</th>
-          <td>Gin</td>
-          <td>Aperol Spritz</td>
-          <td>stir</td>
-          <td>tbd</td>
-        </tr>
-        <tr>
-          <th scope="row">12</th>
-          <td>Tequila</td>
-          <td>Margarita</td>
-          <td>shake</td>
-          <td>tbd</td>
         </tr>
       </tbody>
     </Table>

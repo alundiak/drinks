@@ -53,4 +53,4 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 - https://github.com/dogfessional/react-swipeable - looks ok, but can't be installed via Yarn
 - https://github.com/glepur/react-native-swipe-gestures - not sure
 - https://reactjsexample.com/swipeable-list-component-for-react/ - looks OK. Main article - https://reactjsexample.com/tag/swipe/
-- https://reactjsexample.com/swipable-react-tinder-cards/ - looks really great. But can't be added via Yarn.
+- https://reactjsexample.com/swipable-react-tinder-cards/ - looks really great. But can't be added via Yarn. Also can't be added sub dependencies via Yarn.
