@@ -4,14 +4,18 @@
   "description": "Drinks collection",
   "private": true,
   "dependencies": {
-    "@sandstreamdev/react-swipeable-list": "^0.3.2",
-    "@testing-library/jest-dom": "^4.2.4",
+    "@sandstreamdev/react-swipeable-list": "^0.4.1",
+    "@testing-library/jest-dom": "^5.1.1",
     "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
+    "@testing-library/user-event": "^10.0.0",
     "bootstrap": "^4.4.1",
+    "nuka-carousel": "^4.4.7",
+    "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-scripts": "3.3.0",
+    "react-scripts": "3.4.0",
+    "react-spring": "^7.2.8",
+    "react-with-gesture": "^4.0.8",
     "reactstrap": "^8.4.0"
   },
   "devDependencies": {
@@ -19,7 +23,7 @@
     "eslint-plugin-prettier": "^3.1.2",
     "gh-pages": "^2.2.0",
     "prettier": "^1.19.1",
-    "serialize-javascript": "^2.1.1"
+    "serialize-javascript": "^3.0.0"
   },
   "scripts": {
     "start": "react-scripts start",

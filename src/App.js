@@ -5,17 +5,19 @@ import './styles/responsive.css';
 import DrinksList from './components/DrinksList';
 import DrinkCard from './components/DrinkCard';
 import SwipeableDrinksList from './components/SwipeableDrinksList';
+import TinderLikeDrinksList from './components/tinder-cards/TinderLikeDrinksList';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        {/* <img src={logo} className="App-logo" alt="logo" /> */}
       </header>
       <article>
-        <SwipeableDrinksList />
-        <DrinksList />
-        <DrinkCard />
+        {/* <SwipeableDrinksList /> */}
+        <TinderLikeDrinksList />
+        {/* <DrinksList /> */}
+        {/* <DrinkCard /> */}
         {/* <figure>can be modal-like UI component</figure> */}
       </article>
       <footer>

@@ -54,3 +54,7 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 - https://github.com/glepur/react-native-swipe-gestures - not sure
 - https://reactjsexample.com/swipeable-list-component-for-react/ - looks OK. Main article - https://reactjsexample.com/tag/swipe/
 - https://reactjsexample.com/swipable-react-tinder-cards/ - looks really great. But can't be added via Yarn. Also can't be added sub dependencies via Yarn.
+    - https://www.react-spring.io/ + https://use-gesture.netlify.com/
+    - https://use-gesture.netlify.com/ + https://github.com/react-spring/react-use-gesture
+- https://www.hackdoor.io/articles/8MNPqDpV/build-a-full-featured-tinder-like-carousel-in-vanilla-javascript
+- https://blog.logrocket.com/create-react-app-a-quick-setup-guide-b812f0aad03c/
