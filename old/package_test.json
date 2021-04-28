@@ -1,8 +1,4 @@
 {
-  "name": "@lundiak/drinks",
-  "version": "1.0.0",
-  "description": "Drinks collection",
-  "main": "index.js",
   "scripts": {
     "devBuild": "rm -rf dist && webpack --mode development --env.dev --progress",
     "prodBuild": "rm -rf dist && webpack --mode production --env.prod",

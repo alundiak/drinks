@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Drinks collection or Drinker (derived from Tinder)",
   "private": true,
-  "homepage": "https://alundiak.github.io/drinks",
   "dependencies": {
     "@sandstreamdev/react-swipeable-list": "^1.0.1",
     "nuka-carousel": "^4.7.7",
@@ -47,5 +46,15 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "homepage": "https://alundiak.github.io/drinks",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alundiak/drinks.git"
+  },
+  "author": "Andrii Lundiak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alundiak/drinks/issues"
   }
 }
