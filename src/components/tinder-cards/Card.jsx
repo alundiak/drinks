@@ -1,7 +1,7 @@
 // https://github.com/GavBaros/react-tinder-cards/blob/master/src/components/Card.js
 import React from "react";
 import PropTypes from "prop-types";
-import { animated, interpolate } from "react-spring/hooks";
+import { animated, to } from "react-spring";
 import Carousel from "nuka-carousel";
 
 class Card extends React.Component {
@@ -13,7 +13,7 @@ class Card extends React.Component {
       <animated.div
         key={i}
         style={{
-          transform: interpolate(
+          transform: to(
             [x, y],
             (x, y) => `translate3d(${x}px,${y}px,0)`
           )
@@ -22,7 +22,7 @@ class Card extends React.Component {
         <animated.div
           {...bind(i)}
           style={{
-            transform: interpolate([rot, scale], trans)
+            transform: to([rot, scale], trans)
           }}
         >
           <div className="card">

@@ -1,10 +1,9 @@
 import React from 'react';
-import logo from './images/logo6.jpg';
 import './styles/App.css';
 import './styles/responsive.css';
-import DrinksList from './components/DrinksList';
-import DrinkCard from './components/DrinkCard';
-import SwipeableDrinksList from './components/SwipeableDrinksList';
+// import DrinksList from './components/DrinksList';
+// import DrinkCard from './components/DrinkCard';
+// import SwipeableDrinksList from './components/SwipeableDrinksList';
 import TinderLikeDrinksList from './components/tinder-cards/TinderLikeDrinksList';
 
 function App() {

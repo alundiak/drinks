@@ -1,42 +1,39 @@
 {
   "name": "@lundiak/drinks",
-  "version": "0.1.0",
-  "description": "Drinks collection",
+  "version": "1.0.0",
+  "description": "Drinks collection or Drinker (derived from Tinder)",
   "private": true,
   "dependencies": {
-    "@sandstreamdev/react-swipeable-list": "^0.4.1",
-    "@testing-library/jest-dom": "^5.1.1",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^10.0.0",
-    "bootstrap": "^4.4.1",
-    "nuka-carousel": "^4.4.7",
+    "@sandstreamdev/react-swipeable-list": "^1.0.1",
+    "nuka-carousel": "^4.7.7",
     "prop-types": "^15.7.2",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-scripts": "3.4.0",
-    "react-spring": "^7.2.8",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "react-spring": "^9.1.2",
     "react-with-gesture": "^4.0.8",
-    "reactstrap": "^8.4.0"
+    "reactstrap": "^8.9.0",
+    "web-vitals": "^1.0.1"
   },
   "devDependencies": {
-    "eslint-config-prettier": "^6.9.0",
-    "eslint-plugin-prettier": "^3.1.2",
-    "gh-pages": "^2.2.0",
-    "prettier": "^1.19.1",
-    "serialize-javascript": "^3.0.0"
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^13.1.6",
+    "gh-pages": "^3.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prettier": "prettier src/**/*.jsx src/**/*.js src/styles/**/*.css --check",
-    "prettier-watch": "onchange '**/*.js' -- prettier --write {{changed}}",
     "predeploy": "yarn build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
-    "extends": "plugin:prettier/recommended"
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "browserslist": {
     "production": [
@@ -49,15 +46,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/alundiak/drinks.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/alundiak/drinks/issues"
-  },
-  "homepage": "https://alundiak.github.io/drinks"
+  }
 }

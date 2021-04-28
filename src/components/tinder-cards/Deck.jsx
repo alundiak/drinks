@@ -1,6 +1,6 @@
 // https://github.com/GavBaros/react-tinder-cards/blob/master/src/components/Deck.js
 import React, { useState } from "react";
-import { useSprings } from "react-spring/hooks";
+import { useSprings } from "react-spring";
 import { useGesture } from "react-with-gesture";
 
 import Card from "./Card";
@@ -18,8 +18,7 @@ const to = i => ({
 const from = i => ({ rot: 0, scale: 1.5, y: -1000 });
 
 const trans = (r, s) =>
-  `perspective(1500px) rotateX(30deg) rotateY(${r /
-    10}deg) rotateZ(${r}deg) scale(${s})`;
+  `perspective(1500px) rotateX(30deg) rotateY(${r / 10}deg) rotateZ(${r}deg) scale(${s})`;
 
 function Deck() {
   const [gone] = useState(() => new Set());
