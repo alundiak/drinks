@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Drinks collection or Drinker (derived from Tinder)",
   "private": true,
+  "homepage": "https://alundiak.github.io/drinks",
   "dependencies": {
     "@sandstreamdev/react-swipeable-list": "^1.0.1",
     "nuka-carousel": "^4.7.7",
