@@ -14,7 +14,7 @@ const Example = (props) => {
         <CardBody>
           <CardTitle>Pornstar Martini</CardTitle>
           <CardSubtitle>Vodka-based drink</CardSubtitle>
-          <CardText>Recipe text texttexttex ttexttext text text.</CardText>
+          <CardText>Maverick Martini. Recipe text texttexttex ttexttext text text.</CardText>
           <Button>Order</Button>
         </CardBody>
       </Card>

@@ -18,9 +18,9 @@ const ModalExample = (props) => {
       <Modal isOpen={modal} toggle={toggle} className={className}>
         <ModalHeader>Pornstar Martini</ModalHeader>
         <ModalBody>
-            <img src={img1} className="drink-image-bigger" alt="tbd" />
+          <img src={img1} className="drink-image-bigger" alt="tbd" />
           <b>Recipe!</b><br />
-          TBD data
+          Maverick Martini - TBD data
         </ModalBody>
         <ModalFooter>
           <Button color="primary" onClick={toggle}>Order</Button>{' '}

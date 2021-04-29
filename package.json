@@ -48,10 +48,6 @@
     ]
   },
   "homepage": "https://alundiak.github.io/drinks",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/alundiak/drinks.git"
-  },
   "author": "Andrii Lundiak",
   "license": "ISC",
   "bugs": {
