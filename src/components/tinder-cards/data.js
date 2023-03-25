@@ -38,8 +38,8 @@ const data = [
   },
   {
     pics: [
-      "https://assets.punchdrink.com/wp-content/uploads/2016/03/Article-Porn-Star-Vodka-Passionfruit-Martini-Recipe-Giuseppe-Gonzalez-Suffolk-Arms-NYC.jpg",
-      "https://assets.punchdrink.com/wp-content/uploads/2019/05/31103926/Article-Porn-Star-Martini-Cocktail-Recipe-Douglas-Ankrah.jpg",
+      "https://www.greedygourmet.com/wp-content/uploads/2020/07/pornstarmartini-683x1024.jpg",
+      "https://www.greedygourmet.com/wp-content/uploads/2020/07/pornstarmartini-683x1024.jpg",
       "https://www.greedygourmet.com/wp-content/uploads/2020/07/pornstarmartini-683x1024.jpg"
     ],
     name: "Pornstar Martini",

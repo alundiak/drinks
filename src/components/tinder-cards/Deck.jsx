@@ -1,7 +1,11 @@
 // https://github.com/GavBaros/react-tinder-cards/blob/master/src/components/Deck.js
 import React, { useState } from "react";
-import { useSprings } from "react-spring";
-import { useGesture } from "react-with-gesture";
+
+import { useSprings } from "@react-spring/web";
+// https://www.react-spring.dev/docs/components/use-springs
+
+import { useDrag } from "@use-gesture/react";
+// https://use-gesture.netlify.app/docs/
 
 import Card from "./Card";
 import data from "./data.js";
@@ -23,12 +27,22 @@ const trans = (r, s) =>
 function Deck() {
   const [gone] = useState(() => new Set());
 
-  const [props, set] = useSprings(data.length, i => ({
-    ...to(i),
-    from: from(i)
-  }));
+  const [springs, api] = useSprings(
+    data.length,
+    i => ({
+      ...to(i),
+      from: from(i)
+    }),
+    []
+  );
 
-  const bind = useGesture(
+  // According new API from @use-gesture
+  // const bind = useDrag(
+  //   ({ down, movement: [x], args: [index] }) => api.start((i) => i === index && { x: down ? x : 0 }),
+  //   { axis: 'x' }
+  // )
+
+  const bind = useDrag(
     ({
       args: [index],
       down,
@@ -43,7 +57,7 @@ function Deck() {
 
       if (!down && trigger) gone.add(index);
 
-      set(i => {
+      api.start(i => {
         if (index !== i) return;
         const isGone = gone.has(index);
 
@@ -62,11 +76,12 @@ function Deck() {
       });
 
       if (!down && gone.size === data.length)
-        setTimeout(() => gone.clear() || set(i => to(i)), 600);
-    }
+        setTimeout(() => gone.clear() || api.start(i => to(i)), 600);
+    },
+    { axis: 'x' }
   );
 
-  return props.map(({ x, y, rot, scale }, i) => (
+  return springs.map(({ x, y, rot, scale }, i) => (
     <Card
       i={i}
       x={x}
