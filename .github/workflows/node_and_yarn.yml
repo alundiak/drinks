@@ -15,7 +15,9 @@ jobs:
 
     strategy:
       matrix:
-        # 16.x, can work OK, and no --openssl-legacy-provider needed. It's starting from NodeJS v17 flag needed (so far)
+        # 16.x, can work OK
+        # 17.x requires `--openssl-legacy-provider` for `react-scripts build|test` 
+        # 18.x, 19.x doesn't require that flag ANYMORE
         node-version: [18.x, 19.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
